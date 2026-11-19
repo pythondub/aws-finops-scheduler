@@ -30,6 +30,7 @@ resource "aws_lambda_function" "finops_scheduler" {
 }
 
 resource "aws_scheduler_schedule" "daily_stop" {
+  state                        = "DISABLED"
   name                         = "finops-ec2-daily-stop"
   schedule_expression          = var.schedule_expression
   schedule_expression_timezone = var.schedule_timezone

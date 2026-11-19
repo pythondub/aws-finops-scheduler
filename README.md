@@ -44,9 +44,8 @@ flowchart LR
 ├── terraform/
 │   ├── backend.tf          # S3 remote state with native lockfile
 │   ├── iam.tf              # ABAC execution roles (Lambda & EventBridge)
-│   ├── lambda.tf           # Lambda function, archive packaging & CloudWatch logs
+│   ├── main.tf             # Lambda function, archive packaging, CloudWatch & EventBridge Scheduler
 │   ├── oidc.tf             # Least-privilege GitHub Actions OIDC plan role
-│   ├── scheduler.tf        # EventBridge Scheduler (19:00 Europe/Rome)
 │   └── variables.tf        # Configurable parameters (DRY_RUN, region, schedule)
 ├── pytest.ini              # Deterministic PYTHONPATH configuration for CI/local
 ├── requirements.txt        # Runtime dependencies
