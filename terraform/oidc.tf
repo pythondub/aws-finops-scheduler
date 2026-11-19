@@ -18,7 +18,7 @@ resource "aws_iam_role" "github_actions_plan" {
           "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
         }
         StringLike = {
-          "token.actions.githubusercontent.com:sub" = "repo:pythondub/aws-finops-scheduler:*"
+          "token.actions.githubusercontent.com:sub" = "repo:pythondub@249421126/aws-finops-scheduler@1464311434:*"
         }
       }
     }]
